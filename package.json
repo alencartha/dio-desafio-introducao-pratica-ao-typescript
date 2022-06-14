@@ -1,0 +1,29 @@
+{
+  "name": "dio-desafio-introducao-pratica-ao-typescript",
+  "version": "1.0.0",
+  "description": "desafio dio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alencartha/dio-desafio-introducao-pratica-ao-typescript.git"
+  },
+  "keywords": [
+    "dio",
+    "typescript"
+  ],
+  "author": "Thais Alencar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alencartha/dio-desafio-introducao-pratica-ao-typescript/issues"
+  },
+  "homepage": "https://github.com/alencartha/dio-desafio-introducao-pratica-ao-typescript#readme",
+  "devDependencies": {
+    "typescript": "^4.7.3"
+  },
+  "dependencies": {
+    "lite-server": "^2.6.1"
+  }
+}
