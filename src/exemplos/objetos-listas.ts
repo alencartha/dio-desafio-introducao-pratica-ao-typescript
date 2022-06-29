@@ -1,15 +1,15 @@
 const pessoa = {
     nome: 'Mariana',
     idade: 28,
-    profissao: 'desenvolvedora'
+    //profissao: 'desenvolvedora'
 }
 
-enum Profissao{
+/*enum Profissao{
     Professora,
     Atriz,
     Desenvolvedora,
     JogadoraDeFutebol
-}
+}*/
 
 interface Estudante extends Pessoa {
     materias: string[]
@@ -18,7 +18,7 @@ interface Estudante extends Pessoa {
 interface Pessoa {
     nome: string,
     idade: number,
-    profissao?: Profissao
+   // profissao?: Profissao
 }
 
 const vanessa: Pessoa = {
