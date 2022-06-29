@@ -1,15 +1,11 @@
-let valorAny: any;
-valorAny= 1
-valorAny = 'hello'
-valorAny = true
+function somarValores(input1: number | string, input2: number | string) {
+    if (typeof input1 === 'string' || typeof input2 === 'string') {
+        return input1.toString() + input2.toString();
+    } else {
+        return input1 + input2
+    }
 
-let valorString: string = 'teste'
-valorString = valorAny
-let valorString2: string = 'textão'
-valorString2 = valorAny
-
-function somarString(string1: string, string2: string){
-    console.log(string1 + string2)
 }
 
-somarString(valorString, valorString2)
+console.log(somarValores(1,5))
+console.log(somarValores('olá', ' tudo bem?'))
