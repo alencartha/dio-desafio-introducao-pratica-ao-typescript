@@ -1,27 +1,43 @@
-let input1 = document.getElementById('input1') as HTMLInputElement
-let input2 = document.getElementById('input2') as HTMLInputElement
-let button = document.getElementById('buttonClick')
+const pessoa = {
+    nome: 'Mariana',
+    idade: 28,
+    profissao: 'desenvolvedora'
+}
 
-let devePrintar: boolean = true;
-let frase: string = 'O valor é:'
+enum Profissao{
+    Professora,
+    Atriz,
+    Desenvolvedora,
+    JogadoraDeFutebol
+}
 
-function adicionarNumero(numero1: number, numero2:number, devePrintar: boolean, frase: string){
-    let resultado = numero1 + numero2
-    if(devePrintar){
-        console.log (`${frase} ${resultado}`)
+interface Estudante extends Pessoa {
+    materias: string[]
+}
+
+interface Pessoa {
+    nome: string,
+    idade: number,
+    profissao?: Profissao
+}
+
+const vanessa: Pessoa = {
+    nome: 'Maria',
+    idade: 23,
+    profissao: Profissao.Desenvolvedora
+}
+
+const jessica: Estudante = {
+    nome:'Jéssica',
+    idade: 20,
+    profissao: Profissao.Desenvolvedora,
+    materias: ['POO', "Python", "SQL"]
+}
+
+function listar(lista: string[]){
+    for (const item of lista){
+        console.log('- ', item)
     }
-    return numero1 + numero2
 }
 
-if(button){
-    button.addEventListener('click', () => {
-
-        if(input1 && input2){
-            adicionarNumero(Number(input1.value), Number( input2.value), devePrintar, frase)
-            input1.value = ''
-            input2.value = ''
-        }
-       
-    })
-}
-
+listar(jessica.materias)

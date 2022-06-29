@@ -1,22 +1,30 @@
 "use strict";
-let input1 = document.getElementById('input1');
-let input2 = document.getElementById('input2');
-let button = document.getElementById('buttonClick');
-let devePrintar = true;
-let frase = 'O valor é:';
-function adicionarNumero(numero1, numero2, devePrintar, frase) {
-    let resultado = numero1 + numero2;
-    if (devePrintar) {
-        console.log(`${frase} ${resultado}`);
+const pessoa = {
+    nome: 'Mariana',
+    idade: 28,
+    profissao: 'desenvolvedora'
+};
+var Profissao;
+(function (Profissao) {
+    Profissao[Profissao["Professora"] = 0] = "Professora";
+    Profissao[Profissao["Atriz"] = 1] = "Atriz";
+    Profissao[Profissao["Desenvolvedora"] = 2] = "Desenvolvedora";
+    Profissao[Profissao["JogadoraDeFutebol"] = 3] = "JogadoraDeFutebol";
+})(Profissao || (Profissao = {}));
+const vanessa = {
+    nome: 'Maria',
+    idade: 23,
+    profissao: Profissao.Desenvolvedora
+};
+const jessica = {
+    nome: 'Jéssica',
+    idade: 20,
+    profissao: Profissao.Desenvolvedora,
+    materias: ['POO', "Python", "SQL"]
+};
+function listar(lista) {
+    for (const item of lista) {
+        console.log('- ', item);
     }
-    return numero1 + numero2;
 }
-if (button) {
-    button.addEventListener('click', () => {
-        if (input1 && input2) {
-            adicionarNumero(Number(input1.value), Number(input2.value), devePrintar, frase);
-            input1.value = '';
-            input2.value = '';
-        }
-    });
-}
+listar(jessica.materias);
