@@ -68,7 +68,7 @@ let campoSaldo = document.getElementById('campo-saldo') as HTMLInputElement;
 let valorAtual: number = 0
 let saldo: number = 0
 
-if(campoSaldo){
+if (campoSaldo) {
     campoSaldo.innerHTML = `${saldo}`
 }
 
@@ -83,11 +83,11 @@ function limparSaldo() {
 }
 
 botaoAtualizar?.addEventListener('click', function () {
-    if(soma){
+    if (soma) {
         somarAoSaldo(Number(soma.value));
         console.log(typeof soma)
     }
-    
+
 });
 
 botaoLimpar?.addEventListener('click', function () {
@@ -95,11 +95,10 @@ botaoLimpar?.addEventListener('click', function () {
 });
 
 
-
 if (buttonRespostas) {
     buttonRespostas.addEventListener('click', () => {
-        desafio1.innerHTML = `Desafio 1 -- ${employee.code}, ${employee.name}`
-        desafio2.innerHTML = `<div> Desafio 2 -- Pessoa 1 : ${pessoa1.nome}, ${pessoa1.idade}, ${pessoa1.profissao} </div>
+        desafio1.innerHTML += ` ${employee.code}, ${employee.name}`
+        desafio2.innerHTML += ` Pessoa 1 : ${pessoa1.nome}, ${pessoa1.idade}, ${pessoa1.profissao} </div>
         <div> Desafio 2 -- Pessoa 2 : ${pessoa2.nome}, ${pessoa2.idade}, ${pessoa2.profissao} </div>
         <div> Desafio 2 -- Pessoa 3 : ${pessoa3.nome}, ${pessoa3.idade}, ${pessoa3.profissao} </div>
         <div> Desafio 2 -- Pessoa 4 : ${pessoa4.nome}, ${pessoa4.idade}, ${pessoa4.profissao} </div>
