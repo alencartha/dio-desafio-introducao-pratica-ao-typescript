@@ -1,14 +1,14 @@
 "use strict";
-let anyEstaDeVolta;
+var anyEstaDeVolta;
 anyEstaDeVolta = 'teste';
 anyEstaDeVolta = 1;
-let stringTest = 'verificar';
+var stringTest = 'verificar';
 stringTest = anyEstaDeVolta;
-let unknowValor;
+var unknowValor;
 unknowValor = 3;
 unknowValor = 'opa';
 unknowValor = true;
-let stringTest2 = 'agora vai';
+var stringTest2 = 'agora vai';
 if (typeof unknowValor === 'string') {
     stringTest2 = unknowValor;
 }

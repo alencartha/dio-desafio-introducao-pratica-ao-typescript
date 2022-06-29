@@ -1,11 +1,11 @@
 "use strict";
-let valorAny;
+var valorAny;
 valorAny = 1;
 valorAny = 'hello';
 valorAny = true;
-let valorString = 'teste';
+var valorString = 'teste';
 valorString = valorAny;
-let valorString2 = 'textão';
+var valorString2 = 'textão';
 valorString2 = valorAny;
 function somarString(string1, string2) {
     console.log(string1 + string2);

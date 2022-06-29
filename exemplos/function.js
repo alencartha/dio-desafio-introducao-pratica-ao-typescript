@@ -16,7 +16,7 @@ console.log(somarValores('olá', ' tudo bem?'));
     return number1 + number2
 }*/
 function somarValoresNumericosETratar(number1, number2, callback) {
-    let resultado = number1 + number2;
+    var resultado = number1 + number2;
     return callback(resultado);
 }
 function aoQuadrado(numero) {
