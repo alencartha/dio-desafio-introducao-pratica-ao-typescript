@@ -7,5 +7,9 @@ function somarValores(input1, input2) {
         return input1 + input2;
     }
 }
+function somarValoresNumericos(input1, input2) {
+    return input1 + input2;
+}
 console.log(somarValores(1, 5));
 console.log(somarValores('olá', ' tudo bem?'));
+console.log(somarValoresNumericos(1, 5));

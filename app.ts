@@ -7,5 +7,11 @@ function somarValores(input1: number | string, input2: number | string) {
 
 }
 
-console.log(somarValores(1,5))
+function somarValoresNumericos(input1: number, input2: number): number {
+    return input1 + input2
+}
+
+
+console.log(somarValores(1, 5))
 console.log(somarValores('olá', ' tudo bem?'))
+console.log(somarValoresNumericos(1, 5))
